@@ -92,7 +92,7 @@ export default {
   },
   created() {
     axios
-      .get("/api/seller")
+      .get("https://wujinging.github.io/elema/api/seller/")
       .then(response => {
         if (response.data.errno === 0) {
           this.seller = response.data.data;

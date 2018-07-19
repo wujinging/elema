@@ -95,7 +95,7 @@ export default {
   created() {
     this.mapClass = ["decrease", "discount", "special", "invoice", "guarantee"];
     axios
-      .get("/api/goods")
+      .get("https://wujinging.github.io/elema/api/goods/")
       .then(response => {
         if (response.data.errno === 0) {
           this.goods = response.data.data;
@@ -110,7 +110,7 @@ export default {
         console.log(error);
       });
     axios
-      .get("/api/seller")
+      .get("https://wujinging.github.io/elema/api/seller/")
       .then(response => {
         if (response.data.errno === 0) {
           this.seller1 = response.data.data;
