@@ -46,7 +46,7 @@ module.exports = {
     //  assetsPublicPath: '/',
     assetsSubDirectory: 'static',//本地使用
     assetsPublicPath: './',//线上访问使用 
-    // 20180719 江节胜 添加注释 api请求相对的静态资源时，本地环境：前面加上./ ,不要以/开头，可能导致路径错误，即 ./api/seller/（如果文件是index.html,后面要使用/结尾）
+    //  api请求相对的静态资源时，本地环境：前面加上./ ,不要以/开头，可能导致路径错误，即 ./api/seller/（如果文件是index.html,后面要使用/结尾）
     // GitHubPage环境预览时 好像需要配置全链接了，并且以/结尾（https://wujinging.github.io/elema/api/seller/），否则提示
     // api资源的Mixed Content: xxxx  the content must be served over HTTPS. 等一会并清空缓存即可，github pages服务器好像需要处理一下数据
     //添加到github时,不要马上刷新gitpage页面,会无效
